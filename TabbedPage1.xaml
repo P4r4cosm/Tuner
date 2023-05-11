@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mobile_app;assembly=Mobile_app"
+             x:Class="Mobile_app.TabbedPage1"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             android:TabbedPage.BarItemColor="DarkCyan"
+            android:TabbedPage.BarSelectedItemColor="Cyan"
+            BarBackgroundColor="Black"
+            >
+            
+    
+             
+  <!--Pages can be added as references or inline-->
+
+    <TabbedPage.Children >
+        <local:MainPage Title="Тюнер"/>
+        <local:Settings_Page Title="Настройки" />
+        <local:ChordsPage Title="Аккорды"/>
+    </TabbedPage.Children>
+</TabbedPage>

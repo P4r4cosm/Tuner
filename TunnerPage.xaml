@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+              x:Class="Mobile_app.MainPage" 
+              BackgroundColor="#444444"
+             >
+    <Grid Padding="0,0,5,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+        <Button x:Name="button1" Text="Нажми на любой колок, чтобы начать настройку"  CornerRadius="10" FontSize="20" FontAttributes="Bold" Grid.ColumnSpan="3" />
+        
+
+        <StackLayout  Grid.Column="0" Grid.Row="3" TranslationX="30" TranslationY="20"  Scale="1.5">
+            <ImageButton x:Name="string_6" Clicked="String6_Click" Source="gitar_peg.png"  RotationY="180"  Opacity="0.5"  BackgroundColor="#444444"  Rotation="-5" Padding="5" CornerRadius="20" />
+            <Label Text="E (6)" FontSize="15"  TranslationY="-47" TranslationX="10" FontAttributes="Bold"></Label>
+        </StackLayout>
+        <StackLayout  Grid.Column="0" Grid.Row="2" TranslationX="30" TranslationY="35" Scale="1.5">
+            <ImageButton x:Name="string_5" Clicked="String5_Click" Source="gitar_peg.png"  RotationY="180" Opacity="0.5"  BackgroundColor="#444444" Padding="5" CornerRadius="20"/>
+            <Label Text="A (5)" FontSize="15"  TranslationY="-47" TranslationX="10" FontAttributes="Bold"></Label>
+        </StackLayout>
+        <StackLayout  Grid.Column="0" Grid.Row="1" TranslationX="25" TranslationY="50" Scale="1.5"  >
+            <ImageButton x:Name="string_4" Clicked="String4_Click" Source="gitar_peg.png" RotationY="180" Opacity="0.5"  BackgroundColor="#444444" Rotation="5" Padding="5" CornerRadius="20"/>
+            <Label Text="D (4)" FontSize="15"  TranslationY="-47" TranslationX="10" FontAttributes="Bold"></Label>
+        </StackLayout>
+
+
+
+        <StackLayout  Grid.Column="2" Grid.Row="1" TranslationX="-25" TranslationY="50" Scale="1.5" >
+            <ImageButton x:Name="string_3"  Clicked="String3_Click" Source="gitar_peg.png" Opacity="0.5"  BackgroundColor="#444444" Rotation="5" Padding="5" CornerRadius="20" />
+            <Label Text=" G (3)" FontSize="15"  TranslationY="-47" TranslationX="10" FontAttributes="Bold"></Label>
+        </StackLayout>
+        <StackLayout  Grid.Column="2" Grid.Row="2"  TranslationY="35" TranslationX="-30" Scale="1.5">
+            <ImageButton x:Name="string_2"  Clicked="String2_Click" Source="gitar_peg.png"  Opacity="0.5" BackgroundColor="#444444" Padding="5" CornerRadius="20"/>
+            <Label Text="B (2)" FontSize="15"  TranslationY="-47" TranslationX="10" FontAttributes="Bold"></Label>
+        </StackLayout>
+        <StackLayout  Grid.Column="2" Grid.Row="3"  TranslationY="20" TranslationX="-30" Scale="1.5"  >
+            <ImageButton x:Name="string_1"  Clicked="String1_Click" Source="gitar_peg.png"  Opacity="0.5" BackgroundColor="#444444" Rotation="-5" Padding="5" CornerRadius="20"/>
+            <Label Text="e (1)" FontSize="15"  TranslationY="-47" TranslationX="10" FontAttributes="Bold"></Label>
+        </StackLayout>
+        <Image Source="bg.png" Grid.Column="1" Aspect="AspectFit" Grid.Row="1" Grid.RowSpan="4"  ></Image>
+
+    </Grid>
+       
+            
+
+</ContentPage>
